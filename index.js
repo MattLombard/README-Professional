@@ -29,26 +29,27 @@ const questions = [
     type: 'list',
     message: 'Enter the license for your README',
     name: 'license',
+    choices: ['MIT', 'Microsoft Public License', 'Apache license 2.0'],
   },
   {
     type: 'input',
-    message: 'Re-enter password to confirm:',
-    name: 'confirm',
+    message: 'Enter the contributing guidelines for your README',
+    name: 'contributing',
   },
   {
     type: 'input',
-    message: 'What is your user name?',
-    name: 'username',
+    message: 'Enter the test instructions for your README',
+    name: 'test',
   },
   {
     type: 'input',
-    message: 'What is your password?',
-    name: 'password',
+    message: 'Enter your github username for your README',
+    name: 'github',
   },
   {
     type: 'input',
-    message: 'Re-enter password to confirm:',
-    name: 'questions',
+    message: 'Enter your email address',
+    name: 'email',
   },
 ];
 
