@@ -29,7 +29,7 @@ const questions = [
     type: 'list',
     message: 'Enter the license for your README',
     name: 'license',
-    choices: ['MIT', 'Microsoft Public License', 'Apache license 2.0'],
+    choices: ['MIT', 'IBM', 'ISC'],
   },
   {
     type: 'input',
