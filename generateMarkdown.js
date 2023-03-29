@@ -1,6 +1,18 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  let badgeIcon;
+  if (license === MIT) {
+    badgeIcon = '(https://img.shields.io/badge/License-MIT)';
+  } else if (license === IBM) {
+    badgeIcon = '(https://img.shields.io/badge/License-IPL_1.0)';
+  } else if (license === ISC) {
+    badgeIcon = '(https://img.shields.io/badge/License-ISC)';
+  } else {
+    badgeIcon = '';
+  }
+  return badgeIcon;
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -13,9 +25,9 @@ function renderLicenseLink(license) {
   } else if (license === ISC) {
     licenseLink = '(https://opensource.org/licenses/ISC)';
   } else {
-    link = '';
+    licenseLink = '';
   }
-  return link;
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
