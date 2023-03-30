@@ -27,9 +27,9 @@ const questions = [
   },
   {
     type: 'list',
-    message: 'Enter the license for your README',
+    message: 'Choose the license for your README, if none select none.',
     name: 'license',
-    choices: ['MIT', 'IBM', 'ISC'],
+    choices: ['MIT', 'IBM', 'ISC', 'none'],
   },
   {
     type: 'input',
