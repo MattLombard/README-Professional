@@ -3,11 +3,11 @@
 function renderLicenseBadge(license) {
   let badgeIcon;
   if (license === 'MIT') {
-    badgeIcon = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]';
+    badgeIcon = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
   } else if (license === 'IBM') {
-    badgeIcon = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)]';
+    badgeIcon = '![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)';
   } else if (license === 'ISC') {
-    badgeIcon = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]';
+    badgeIcon = '![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)';
   } else {
     badgeIcon = '';
   }
@@ -73,7 +73,7 @@ function generateMarkdown(data) {
   ## test
   ${data.test}
   ## questions
-  Github profile- ${data.github}. Link to profile [Github profile](https://github.com/${data.github})
+  Github profile- ${data.github}. Link to profile [Github profile](https://github.com/${data.github}).\n
   For any other questions you can reach me at ${data.email}
 `;
 }

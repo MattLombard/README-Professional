@@ -17,12 +17,12 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Enter the installation for your README',
+    message: 'What command should be run to install dependencies?',
     name: 'installation',
   },
   {
     type: 'input',
-    message: 'Enter the usage information for your README',
+    message: 'What does the user need to know about using the repo?',
     name: 'usage',
   },
   {
@@ -33,12 +33,12 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Enter the contributing guidelines for your README',
+    message: 'What does the user need to know about contributing to the repo?',
     name: 'contributing',
   },
   {
     type: 'input',
-    message: 'Enter the test instructions for your README',
+    message: 'What command should be run to run tests?',
     name: 'test',
   },
   {
