@@ -27,7 +27,7 @@ const questions = [
   },
   {
     type: 'list',
-    message: 'Choose the license for your README, if none select none.',
+    message: 'Choose the license for your project, if none select none.',
     name: 'license',
     choices: ['MIT', 'IBM', 'ISC', 'none'],
   },
@@ -54,15 +54,17 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-let fileName = 'practiceREADME.md';
+let fileName = 'userREADME.md';
 
 function writeToFile(fileName, data) {
   fs.appendFile(fileName, data, (err) => {
-    err ? console.error(err) : console.log('README made');
+    // using node module to append the data to the file
+    err ? console.error(err) : console.log('README made'); // if error occurs, logs the error to the console
   });
 }
 
 // TODO: Create a function to initialize app
+// Use the inquirer module to prompt the user with questions and pass their responses to the writeToFile function
 function init() {
   inquirer.prompt(questions).then((response) => writeToFile(fileName, generateMarkdown(response)));
 }
