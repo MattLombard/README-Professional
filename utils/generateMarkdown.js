@@ -72,7 +72,7 @@ function generateMarkdown(data) {
   ${data.usage}
   ${renderLicenseSection(data.license)}
   ## contribution
-  ${data.contribution}
+  ${data.contributing}
   ## test
   ${data.test}
   ## questions
